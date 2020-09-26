@@ -1,0 +1,237 @@
+/* Universal Styles */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Header */
+
+header {
+    background-color: #ffffff;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.nav-links li {
+  display: inline;
+  margin-right: 16px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1rem;
+  padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+  line-height: 1rem;
+}
+
+a.desktop-nav #logo {
+  text-decoration: none;
+  color: #303030;
+  line-height: 1rem;
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.light {
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+header .mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  #logo {
+    height: 4rem;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+.mobile {
+  margin: 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.nav-links {
+  display: none;
+}
+
+.desktop-nav {
+  display: none;
+  }
+
+#logo {
+  display: none;
+ }
+}
+
+/* Main Content */
+
+main {
+  position: relative;
+  top: 4rem;
+}
+
+.leftphoto {
+  width: 60%;
+}
+
+.banner {
+  background-color: #d8d8d8;
+  width: 100%;
+  display: flex;
+}
+
+.banner img {
+  width: 90%;
+}
+
+h1 {
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .leftphoto img {
+    width: 100%;
+  }
+} 
+
+@media only screen and (min-width: 800px) {
+ .leftphoto {
+ width: 60%;
+ padding: 2rem 1.5rem;
+ flex-grow: 1;
+ flex-shrink: 1;
+ }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .leftphoto {
+    width: 100%
+  }
+}
+
+
+/* Sign Up Section */
+
+button {
+  height: 4rem;
+  background-color: #303030;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  flex-shrink: 1;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 800px) {
+  button {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+button {
+  width: 100%;
+ }
+} 
+
+
+/* Body */
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #303030;
+  font-size: 16px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+  
+
+@media only screen and (min-width: 800px) {
+  .banner .righttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+.banner h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .righttext {
+    width: 40%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+      
